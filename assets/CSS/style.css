@@ -1,0 +1,138 @@
+:root {
+    --light:white;
+    --dark: rgb(16, 52, 16);
+    --med: rgb(73, 16, 16);
+}
+
+* {
+    background-color:var(--med);
+    font-family:sans-serif;
+    color:white;
+}
+
+body {
+    
+
+}
+    
+
+header {
+    display:flex;
+    flex-direction: row;
+   justify-content: space-between;
+   background-color:var(--light);
+   border-bottom: 2px solid;
+   font-family: serif;
+}
+   h1 { 
+    background-color: var(--light);
+    margin-bottom:auto;
+    font: 10 em sans-serif;
+    color:rgb(73, 28, 28);
+}
+
+ nav {
+    display:flex;
+    flex-direction: column;
+    background-color:var;
+    background-color: var(--light);
+    
+}
+
+ul {
+    align-items: end;
+    background-color: var(--light);
+    
+}
+
+
+a[href$="style.css"]::before {
+    content:"🥑";
+    display: inline-block;
+}
+
+li {
+display:inline;
+padding: 0 10px;
+font-size: larger;
+font-weight: bold;
+font-family:serif;
+background-color: var(--light);
+color:var(--med);
+}
+
+li:hover {
+color:var(--dark);
+}
+
+
+
+h2 {
+    color:var(--light);
+    text-align: end;
+    margin-right:225px;
+
+}
+
+.container {
+    display:flex;
+    margin-left:200px;
+    justify-content: flex-end;
+}
+
+.about-me {
+align-items: end;
+margin-left:700px;
+font-size: larger;
+text-decoration:none;
+
+}
+
+.horiseon {
+    border-radius: 5rem;
+    border: 2px solid;
+    margin:10px 0 30px 10px;
+}
+
+.horiseon img {
+    transition: 0.5s ease-in-out;
+}
+
+ .horiseon:hover img {
+   filter: blur(5px);
+}
+
+
+.photo{
+    width: 10%;
+    border-radius:10rem 10rem 1rem 1rem;
+    position: relative;
+    left:50px;
+}
+
+.work-info {
+    text-align:start;
+    margin-left:335px;
+}
+
+
+h2:hover{
+color:var(--dark);
+}
+
+.contact {
+    display:flex;
+    flex-direction:column;
+    background-color: var(--med);
+    color:var(--light);
+    align-items: center;
+}
+
+.contact-info {
+    text-align: center;
+    margin-left:240px;
+}
+
+strong {
+    text-decoration: underline;
+}
