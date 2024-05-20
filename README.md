@@ -1,7 +1,7 @@
 # My-Portfolio
 
 ## Description
- My Portolio with contact information and my current work
+ My Portfolio with contact information and my current work
 
 ## Deployed Url
 
