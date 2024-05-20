@@ -1,12 +1,13 @@
 # My-Portfolio
 
 ## Description
- My Portolio with contact information and my current work
+ My Portfolio with contact information and my current work
 
 ## Deployed Url
 
 ## screenshot
-[alt text](image.png)!
+![image](https://github.com/TravisHaynie/My-Portfolio/assets/161087057/b70d23c0-b3d4-4586-9688-3632c3a19cc2)
+
 
 ## sources
 
