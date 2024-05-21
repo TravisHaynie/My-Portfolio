@@ -1,7 +1,7 @@
 # My-Portfolio
 
 ## Description
- My Portfolio with contact information and my current work
+ My Portfolio with Information about me  my contact information and my current work in school
 
 ## Deployed Url
 https://travishaynie.github.io/My-Portfolio/

@@ -259,6 +259,24 @@ footer {
         align-items: center;
         width: 96%;
     }
+    ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    li {
+        align-items: end;
+        margin:0;
+    }
+
+    a[href$="style.css"]::before {
+        content:"🥑";
+        display: inline;
+        background-color: white;
+    }
+    
+
+
 
 }
     
