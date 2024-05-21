@@ -105,6 +105,12 @@ li:hover {
     color:var(--dark);
 }
 
+a:hover {
+    color:var(--dark);
+    cursor: grab;
+}
+
+
 section {
     display:flex;
     flex-direction: column;
@@ -167,6 +173,7 @@ h2:hover {
     background-color: var(--med);
     color:var(--light);
     align-items: center;
+    margin-right:20px;
 }
 
 .contact-info {
