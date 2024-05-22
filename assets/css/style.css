@@ -7,14 +7,18 @@
 * {
     background-color:var(--med);
     font-family:sans-serif;
-    color:white;
+    color:var(--light);
 }
 
- body {
-    margin:50px;
-    border:2px solid black;
-    border-radius:2rem;
+body {
+    margin: 0;
+    padding: 3rem;
+    background: url('../imgs/360_F_225084966_hhswkk9GgkAKcr2p1n69aaiI1jETbZO9.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color:var(--med);
+    
 }
+
 
 header {
      display:flex;
@@ -24,7 +28,7 @@ header {
       border-bottom: 5px solid black;
       font-family: serif;
       border-radius: 2rem 2rem 0em 0rem;
-      border: 10px solid var(--dark);
+      border: 7px solid var(--dark);
 }
 
  h1 { 
@@ -45,34 +49,6 @@ header {
     border:5px solid var(--med);
 }
 
-
-.code {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    background-repeat: no-repeat;
-     background-size: auto;
-    z-index: -1;
-}
-
-.code-1 {
-    display: block;
-    position:absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-    margin-top:500px;
-   
-}
- 
-
  nav {
     margin-top:200px;
     background-color:var;
@@ -84,11 +60,10 @@ ul {
     background-color: var(--light);
 }
 
-
 a[href$="style.css"]::before {
     content:"🥑";
     display: inline-block;
-    background-color: white;
+    background-color: var(--light);
 }
 
 li {
@@ -119,6 +94,9 @@ section {
     
 }
 
+main {
+    border:5px solid black;
+}
 h2 {
     color:var(--light);
     background-color: black;
@@ -186,9 +164,12 @@ strong {
 
 footer {
     text-align: center;
-    margin:50px;
+    margin:0;
 }
 
+.footer {
+    border: 5px solid black;
+}
 @media screen and (max-width: 1000px) {
   
     header {
@@ -205,8 +186,11 @@ footer {
         margin-bottom: 100px;
     }
 
-    a {
+     a {
         background-color: var(--light);
+    }
+    .email {
+        background-color: var(--med);
     }
 
     li {
@@ -269,17 +253,19 @@ footer {
     ul {
         display: flex;
         flex-wrap: wrap;
+        
     }
 
     li {
         align-items: end;
         margin:0;
+       
     }
 
     a[href$="style.css"]::before {
         content:"🥑";
         display: inline;
-        background-color: white;
+        background-color: var(--light);
     }
     
 
