@@ -1,14 +1,16 @@
 :root {
     --light: white;
-    --dark: rgb(27, 69, 23);
-    --med: rgb(73, 16, 16);  /* Maroon-red */
-    --accent: rgba(90, 90, 90, 0.7); /* Softer gray accent */
+    --dark-maroon: rgb(73, 16, 16);  /* Solid maroon */
+    --translucent-white: rgba(255, 255, 255, 0.5); /* Truly translucent white for buttons */
+    --hover-subtle-red: rgba(150, 30, 30, 0.8); /* More subtle red for hover */
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--light);
     margin: 0;
+    background: url('../imgs/360_F_225084966_hhswkk9GgkAKcr2p1n69aaiI1jETbZO9.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 header {
@@ -16,7 +18,7 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
-    background-color: var(--med); /* Maroon-red for header */
+    background-color: var(--dark-maroon);  /* Maroon-red for header */
     border-bottom: 5px solid var(--light);
 }
 
@@ -34,12 +36,7 @@ header img {
 
 header h1 {
     color: var(--light);
-    font-family: 'Roboto', sans-serif;
     margin-bottom: 1rem;
-}
-
-nav {
-    margin-top: 1rem;
 }
 
 nav ul {
@@ -52,34 +49,34 @@ nav ul li {
 }
 
 nav ul li a {
-    color: var(--light);
-    background-color: var(--accent);
+    color: var(--dark-maroon);  /* Maroon text */
+    background-color: var(--translucent-white);  /* Translucent white background */
     padding: 0.5rem 1rem;
     border-radius: 5px;
     text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover transition */
 }
 
 nav ul li a:hover {
-    background-color: var(--dark); /* Dark green for hover */
+    background-color: var(--hover-subtle-red);  /* Subtle red on hover */
+    color: var(--light);  /* White text on hover */
 }
 
 main {
     padding: 2rem;
-    background: url('../imgs/360_F_225084966_hhswkk9GgkAKcr2p1n69aaiI1jETbZO9.jpg') no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
+    background-color: rgba(255, 255, 255, 0.3); /* Translucent white overlay */
     margin: 2rem auto;
     max-width: 1200px;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.6); /* Translucent overlay */
 }
 
 .section {
     margin-bottom: 2rem;
-    padding: 1rem;
+    padding: 2rem;
+    background-color: var(--dark-maroon);  /* Solid maroon-red for sections */
+    color: var(--light);
     border-radius: 10px;
-    background-color: var(--med); /* Maroon-red for sections */
-    opacity: 0.95; /* Slight opacity for a lighter feel */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);  /* Add shadow for better contrast */
 }
 
 h2 {
@@ -91,28 +88,42 @@ h2 {
 p {
     text-align: center;
     line-height: 1.6;
-    color: var(--light);
 }
 
-.work {
-    display: flex;
-    justify-content: space-around;
+ul {
+    text-align: center;
+    list-style: none;  /* Removes bullet points from contact section */
+    padding: 0;
 }
 
-.work img {
+ul li a {
+    color: var(--light); /* White links */
+    text-decoration: underline;
+}
+
+ul li a:hover {
+    color: var(--hover-subtle-red);  /* Subtle red hover for links */
+}
+
+.work-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  /* Responsive grid layout */
+    gap: 1rem;
+}
+
+.work-img {
     width: 100%;
-    max-width: 300px;
     border-radius: 10px;
     transition: box-shadow 0.3s ease-in-out;
 }
 
-.work img:hover {
+.work-img:hover {
     box-shadow: 0 0 15px var(--light);
 }
 
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: var(--dark);
+    background-color: var(--dark-maroon);
     color: var(--light);
 }
